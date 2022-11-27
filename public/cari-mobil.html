@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Binar Rental Car</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet"/>
+        <link href="assets/css/bootstrap-reboot.min.css"/>
+        <link href="assets/css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+      <header>
+        <section id="navtop">
+          <nav class="navbar navbar-expand-lg justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end px-3" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="navcontent">
+              <ul class="nav justify-content-end" >
+                <li class="nav-item">
+                  <a class="nav-link active" href="#our">Our Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#why">Why Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#testi">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#faq">FAQ</a>
+                </li>
+                <button class="btn btn-success" type="button">Register</button>
+              </ul>    
+              </div> 
+            </div>
+          </nav>
+        </section>
+
+        <section id="banner">
+          <div class="row mt-5">
+              <div class="col-md-6 col-sm-12">
+                <p class="banner-title">Sewa & Rental Mobil Terbaik di kawasan Solo</p>
+                  <p class="banner-subtitle">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+                    untuk sewa mobil selama 24 jam.
+                  </p>
+              </div>
+
+              <div class=" col-md-6 col-sm-12">
+                <img class="img-fluid" src="assets/img/img_car.png" class="mobil">
+              </div>
+        </div>
+        </section>
+      </header>
+    
+      <main>
+        <section class="kotak-pencarian">
+            <div class="container text-center">
+                <form id="form_filter">
+                    <div class="row row-cols-auto">
+                        <div class="col-md-2 px-2 py-4" id="item1">
+                            <label>Tipe Driver</label>
+                            <select class="form-control" id="tipe_driver" name="tipe-driver">
+                                <option>Pilih Tipe Driver</option>
+                                <option value="dengan_sopir">Dengan Sopir</option>
+                                <option value="tanpa_sopir">Tanpa Sopir (Lepas Kunci)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 px-2 py-4" id="item2">
+                            <label>Tanggal</label>
+                            <input class="form-control" id="tanggal_booking" type="date" name="tipe-driver" placeholder="Pilih Tanggal">
+                        </div>
+                        <div class="col-md-2 px-2 py-4" id="item3">
+                            <label>
+                                Waktu Jemput/Ambil
+                            </label>
+                            <input id="waktu_booking" 
+                            class="form-control"
+                             type="time"
+                             placeholder="Pilih Waktu">
+                            </input>
+                        </div>
+                        <div class="col-md-2 px-2 py-4" id="item4">
+                            <label>
+                                Jumlah Penumpang (optional)
+                            </label>
+                            <input class="form-control" id="total_penumpang" type="number" name="jumlah-penumpang" placeholder="Jumlah Penumpang">
+                        </div>
+                        <div class="col-md-2 px-2 py-4 d-flex justify-content-start" id="item5">
+                            <button id="load-btn" type="submit" class="btn btn-success m-1 mt-3">Cari Mobil</button>
+                            <button id="clear-btn" type="submit" class="btn btn-danger m-1 mt-3">Hapus</button>
+                      </div>
+                      </div>
+                </form>
+              </div>
+        </section>
+
+        <!-- <button id="">Load</button>
+        <button id="">Clear</button> -->
+        <div class="container ">
+          <div id="cars-container" class="row row-cols-md-3"></div>
+        </div>
+      </main>
+
+        <footer style="margin-top: 20px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3" id="address">
+                  <p>
+                      Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+                  </p>
+                  <p>binarcarrental@gmail.com</p>
+                  <p>081-233-344-808</p>
+              </div>
+              <div class="col-md-3" id="navigation">
+                  <p><strong>Our services</strong></p>
+                  <p><strong>Why Us</strong></p>
+                  <p><strong>Testimonial</strong></p>
+                  <p><strong>FAQ</strong></p>
+              </div>
+              <div class="col-md-3" >
+                  <p>Connect with us</p>
+                  <div class="container">
+                      <div class="row row-cols-auto" id="icon">
+                          <div class="col">
+                              <a href="www.facebook.com"><img src="assets/img/icon_facebook.png" width="32px" height="32px"></a>
+                          </div>
+                          <div class="col">
+                              <a href="www.instagram.com"><img src="assets/img/icon_instagram.png" width="32px" height="32px"></a>
+                          </div>
+                          <div class="col">
+                            <a href="www.twitter.com"><img src="assets/img/icon_twitter.png" width="32px" height="32px"></a>
+                          </div>
+                          <div class="col">
+                            <a href="www.mail.goole.com"><img src="assets/img/icon_mail.png" width="32px" height="32px"></a>  
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <p>Copyright Binar 2022</p>
+                  <img src="assets/img/Rectangle_74.png" alt="kotakbiru" class="kotakbiru">
+              </div>
+          </div>
+        </div> 
+        </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+          <script src="scripts/app.js"></script>
+          <script src="scripts/binar.js"></script>
+          <script src="scripts/car.js"></script>
+          <script src="scripts/main.js"></script>
+    </body>
+</html>

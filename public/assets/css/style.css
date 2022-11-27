@@ -1,0 +1,425 @@
+header {
+    background-color: hsl(231, 100%, 97%);
+    padding: 20px;
+}
+
+#navtop a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+}
+
+.banner-title {
+    position: relative;
+    width: 568px;
+    height: 108px;
+    left: 136px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+.banner-subtitle {
+    position: relative;
+    width: 468px;
+    height: 60px;
+    left: 136px;
+    
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#banner button {
+    box-sizing: border-box;
+    
+    position: relative;
+    width: 170px;
+    height: 45px;
+    left: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+#banner .mobil {
+    width: 660px;
+    height: 407px;
+    left: 1440px;
+}
+
+body {
+    font-family: 'Helvetica';
+    margin : 0px;
+    padding: 0px;
+}
+
+#our .servis {
+    position: relative;
+    width: 459px;
+    height: 428px;
+    left: 206px;
+    
+}
+
+main {
+    background-color: white;
+}
+
+#btnsw {
+    margin-left: 30%;
+}
+
+#our p {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#our ul li {
+    margin-top: 5px;
+    margin-left: 80px;
+    padding: 5px;
+    list-style: none;
+}
+
+#our .title {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#our .subtitle {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+#why .title {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#why .subtitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#why .card {
+    padding: 10px;
+}
+
+#why h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#why p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#testi .title {
+    text-align: center;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#testi .subtitle {
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#testi {
+    margin-top: 30px;
+}
+
+.stars {
+    color: orange;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    width: 80px;
+    height: 16px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#testi img {
+    margin : 50% 0 50% 30px;
+}
+
+#testi p {
+    margin-top: 20px;
+}
+
+#testi .card {
+    background-color: aliceblue;
+    margin : 20px auto 0 auto;
+}   
+
+#sewa {
+    margin : 30px auto 30px auto;
+    padding-top: 20px;
+    width: 750px;
+    height: 180px;
+    background-color: blue;
+    color: white;
+}
+
+#sewa h5 {
+    font-size: 26px;
+}
+
+#sewa p {
+    font-size: 12px;
+}
+
+#faq .accordion-item,
+#faq .accordion,
+#faq .accordion-header {
+    border: none;
+}
+
+#faq {
+    padding: 20px;
+    margin-right: 30px;
+}
+
+#faq .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+
+    margin-left: 20%;
+}
+
+#faq .subtitle {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-left: 20%;
+}
+
+footer {
+    padding: 20px;
+    font-family: 'Helvetica';
+    background-color: hsl(231, 100%, 97%);
+}
+
+#address {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#navigation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (max-width: 420px) {
+    /* body {
+        width: fit-content;
+    } */
+
+    .navcontent ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .banner-title {
+        position: sticky;
+        width: fit-content;
+        height: 156px;
+      
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+    }
+
+    .banner-subtitle {
+        position: sticky;
+        width: fit-content;
+        height: 60px;
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #banner .img-fluid {
+        margin-top: 20px;
+    }
+
+    #banner button {
+        position: sticky;
+        width: fit-content;
+        margin-top: 60px;
+    }
+
+    #our p {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    #our ul li {
+        margin-top: 5px;
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    #why .card {
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    #testi .img-fluid {
+       margin: 20px 0% 0px 40%;
+    }
+
+    .stars {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+    }
+
+    #sewa {
+        width: 330px;
+        height: 280px;
+    }
+
+    #faq .title {
+        font-size: 30px;
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    #faq .subtitle {
+        font-size: 18px;
+        margin-left: auto;
+    }
+
+    footer {
+        background-color: hsl(231, 100%, 97%);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    footer img {
+        margin-bottom: 15px;
+    }
+
+    footer #icon {
+        margin-left: 20px;
+    }
+    
+    footer .kotakbiru {  
+        margin-left: 30%;
+    }
+} 
+
+.kotak-pencarian {
+    position: absolute;
+    width: 1047px;
+    height: 126px;
+    left: 155px;
+    top: 458px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    
+}
+
+label {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+
+    color: #3C3C3C;
+}
+
+#form_filter {
+    margin-left: 20px;
+    padding: 2px;
+}
+
+#item1, #item2, #item3, #item4, #item5 {
+    width: fit-content;
+}
+
+#load-btn {
+    margin-left: 45px;
+    width: 92px;
+    height: 36px;
+}
+
+#clear-btn {
+    margin-left: 1px;
+    width: 92px;
+    height: 36px;
+}
+
+.card {
+    margin-top: 130px;
+    margin-left: 50px;
+}
+
+
+
+
